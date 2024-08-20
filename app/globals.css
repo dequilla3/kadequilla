@@ -23,7 +23,7 @@
 }
 
 .circle {
-  animation: bloop 5s infinite;
+  animation: bloop 10s infinite;
 }
 
 @keyframes bloop {

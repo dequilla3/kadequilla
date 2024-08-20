@@ -2,32 +2,30 @@
 
 import Image from "next/image";
 import { BiLogoTypescript } from "react-icons/bi";
-import { DiJava, DiJavascript } from "react-icons/di";
+import { DiJavascript } from "react-icons/di";
 import {
   FaCss3,
-  FaDocker,
   FaFigma,
   FaGithub,
   FaHtml5,
   FaLinkedin,
-  FaLocationArrow,
   FaReact,
+  FaVuejs,
 } from "react-icons/fa";
-import { FaLocationPin } from "react-icons/fa6";
 
 export default function HeroSection() {
-  const techIconSize = 24;
+  const techIconSize = 22;
   return (
-    <div className="py-64 flex xl:pb-96">
-      <div className="w-1/2">
-        <div className="font-bold flex tracking-widest mb-4 lg:text-4xl xl:text-5xl">
-          Front End Developer 👋
+    <div className="sm:text-center sm:py-32 md:text-left md:py-64 md:flex xl:pb-96">
+      <div className="md:w-1/2">
+        <div className="font-bold tracking-widest mb-4 sm:text-3xl lg:text-4xl xl:text-5xl">
+          Front End Developer
         </div>
         <div className=" text-neutral-500 tracking-widest mb-4">
           Hi, I&apos;m Kim Ariel Dequilla. A passionate Front-end Developer
           based in General Santos City, Philippines 📍
         </div>
-        <div className="flex mt-3">
+        <div className="flex mt-3 sm:justify-center md:justify-start">
           <a
             className="mr-1"
             href="https://www.linkedin.com/in/kadequilla"
@@ -40,14 +38,13 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <div className="flex mt-20 w-full">
-          <div className="font-bold w-1/4">Tech Stacks |</div>
+        <div className="md:flex mt-16 w-full mb-8">
+          <div className="font-bold md:w-1/4 text-sm sm:w-full sm:mb-3">
+            Tech Stacks
+          </div>
           <div className="flex justify-evenly w-full">
             <a href="">
               <DiJavascript size={techIconSize} />
-            </a>
-            <a href="">
-              <BiLogoTypescript size={techIconSize} />
             </a>
             <a href="">
               <FaHtml5 size={techIconSize} />
@@ -56,23 +53,24 @@ export default function HeroSection() {
               <FaCss3 size={techIconSize} />
             </a>
             <a href="">
+              <BiLogoTypescript size={techIconSize} />
+            </a>
+            <a href="">
               <FaReact size={techIconSize} />
             </a>
             <a href="">
-              <DiJava size={techIconSize} />
+              <FaVuejs size={techIconSize} />
             </a>
             <a href="">
               <FaFigma size={techIconSize} />
             </a>
-            <a href="">
-              <FaDocker size={techIconSize} />
-            </a>
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex justify-center">
+
+      <div className="flex justify-center md:w-1/2">
         <Image
-          className="circle rounded-full shadow-lg border-4 border-black"
+          className="circle rounded-full shadow-lg border-4 border-neutral-800"
           src="/me.jpg"
           width={450}
           height={450}
