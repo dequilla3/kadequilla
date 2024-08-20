@@ -10,21 +10,22 @@ import {
   FaGithub,
   FaHtml5,
   FaLinkedin,
+  FaLocationArrow,
   FaReact,
 } from "react-icons/fa";
+import { FaLocationPin } from "react-icons/fa6";
 
 export default function HeroSection() {
   const techIconSize = 24;
   return (
     <div className="py-64 flex xl:pb-96">
       <div className="w-1/2">
-        <div className="font-bold flex tracking-widest mb-3 lg:text-4xl xl:text-5xl">
-          Front End Developer
+        <div className="font-bold flex tracking-widest mb-4 lg:text-4xl xl:text-5xl">
+          Front End Developer 👋
         </div>
-        <div className=" text-neutral-500 tracking-widest mb-2">
-          {
-            "Hi, I'm Kim Ariel Dequilla—a passionate Front End Developer dedicated to transforming ideas into stunning, user-friendly websites. With a knack for blending creativity with technical expertise, I specialize in building responsive, high-performance interfaces that captivate and convert."
-          }
+        <div className=" text-neutral-500 tracking-widest mb-4">
+          Hi, I&apos;m Kim Ariel Dequilla. A passionate Front-end Developer
+          based in General Santos City, Philippines 📍
         </div>
         <div className="flex mt-3">
           <a
@@ -71,7 +72,7 @@ export default function HeroSection() {
       </div>
       <div className="w-1/2 flex justify-center">
         <Image
-          className="circle rounded-full shadow-2xl shadow-pink-200"
+          className="circle rounded-full shadow-lg border-4 border-black"
           src="/me.jpg"
           width={450}
           height={450}
