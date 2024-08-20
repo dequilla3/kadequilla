@@ -40,7 +40,7 @@ export default function AboutMe() {
         </div>
         <div className="sm:w-full sm:text-center sm:px-8 md:px-0 md:text-left md:w-1/2">
           <div className="text-5xl mb-5">What do I help?</div>
-          <div className="tracking-wider">
+          <div className="tracking-wider mb-8">
             I design web applications, both front-end and back-end, as well as
             mobile applications using Flutter and desktop applications with .NET
             frameworks. My work involves creating intuitive user interfaces,
@@ -50,6 +50,18 @@ export default function AboutMe() {
             apps for both iOS and Android. For desktop applications, I utilize
             .NET frameworks to deliver scalable and efficient software
             solutions.
+          </div>
+
+          <div className="flex sm:justify-center md:justify-normal">
+            <div className="text-center mr-8 rounded-xl border p-4">
+              <div className="text-3xl font-bold">7+</div>
+              <div className="text-xs">Projects Completed</div>
+            </div>
+
+            <div className="text-center rounded-xl border p-5">
+              <div className="text-3xl font-bold">4</div>
+              <div className="text-xs">Happy Clients</div>
+            </div>
           </div>
         </div>
       </div>

@@ -19,13 +19,14 @@ export default function HeroSection() {
     <div className="sm:text-center sm:px-8 sm:py-32 md:px-64 md:text-left md:flex xl:pt-64">
       <div className="md:w-1/2">
         <div className="font-bold tracking-widest mb-6 sm:text-3xl lg:text-4xl xl:text-5xl">
-          Full Stack Web Developer
+          Full-stack Software Developer
         </div>
         <div className=" text-neutral-500 tracking-widest mb-6">
-          Hi, I&apos;m Kim Ariel Dequilla. A passionate Front-end Developer
-          based in General Santos City, Philippines 📍
+          Hi, I&apos;m Kim Ariel Dequilla. A passionate Full-stack Software
+          Developer based in General Santos City, Philippines 📍
         </div>
-        <div className="flex sm:justify-center md:justify-start mb-16">
+
+        <div className="flex sm:justify-center sm:mb-16 md:justify-start md:mb-16">
           <a
             className="mr-1"
             href="https://www.linkedin.com/in/kadequilla"
@@ -38,7 +39,7 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <div className="md:flex w-full mb-6">
+        <div className="sm:mb-14 md:flex w-full md:mb-6">
           <div className="font-bold md:hidden text-sm sm:w-full sm:mb-3">
             Tech Stacks
           </div>
@@ -67,7 +68,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="flex sm:justify-center md:justify-normal mb-5 text-yellow-600">
+        <div className="flex sm:justify-center md:justify-normal mb-8 text-yellow-600">
           <div className="text-6xl font-bold mr-3">4+</div>
           <div className="font-bold text-left">
             YEARS <br />
