@@ -1,13 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
+import { DiJava, DiJavascript } from "react-icons/di";
+import {
+  FaCss3,
+  FaDocker,
+  FaFigma,
+  FaGithub,
+  FaHtml5,
+  FaLinkedin,
+  FaReact,
+} from "react-icons/fa";
 
 export default function HeroSection() {
+  const techIconSize = 24;
   return (
-    <div className="py-32 flex xl:pb-64">
+    <div className="py-64 flex xl:pb-96">
       <div className="w-1/2">
-        <div className="font-bold flex tracking-widest mb-3 lg:text-4xl 1xl:text-5xl">
+        <div className="font-bold flex tracking-widest mb-3 lg:text-4xl xl:text-5xl">
           Front End Developer
         </div>
         <div className=" text-neutral-500 tracking-widest mb-2">
@@ -24,13 +35,43 @@ export default function HeroSection() {
             <FaLinkedin className="text-sky-700" size={34} />
           </a>
           <a href="https://github.com/dequilla3" target="_blank">
-            <FaGithub className="text-pink-950" size={34} />
+            <FaGithub className="text-purple-950" size={34} />
           </a>
+        </div>
+
+        <div className="flex mt-20 w-full">
+          <div className="font-bold w-1/4">Tech Stacks |</div>
+          <div className="flex justify-evenly w-full">
+            <a href="">
+              <DiJavascript size={techIconSize} />
+            </a>
+            <a href="">
+              <BiLogoTypescript size={techIconSize} />
+            </a>
+            <a href="">
+              <FaHtml5 size={techIconSize} />
+            </a>
+            <a href="">
+              <FaCss3 size={techIconSize} />
+            </a>
+            <a href="">
+              <FaReact size={techIconSize} />
+            </a>
+            <a href="">
+              <DiJava size={techIconSize} />
+            </a>
+            <a href="">
+              <FaFigma size={techIconSize} />
+            </a>
+            <a href="">
+              <FaDocker size={techIconSize} />
+            </a>
+          </div>
         </div>
       </div>
       <div className="w-1/2 flex justify-center">
         <Image
-          className="rounded-full shadow-2xl shadow-pink-200"
+          className="circle rounded-full shadow-2xl shadow-pink-200"
           src="/me.jpg"
           width={450}
           height={450}
