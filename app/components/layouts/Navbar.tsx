@@ -10,13 +10,10 @@ export default function Navbar() {
         </a>
         <ul className="sm:hidden md:flex justify-end w-full font-semibold text-neutral-700">
           <li>
-            <div className="ml-5 cursor-pointer">Home</div>
+            <div className="ml-5 cursor-pointer">📞+63 918 389 3886</div>
           </li>
           <li>
-            <div className="ml-5 cursor-pointer">Projects</div>
-          </li>
-          <li>
-            <div className="ml-5 cursor-pointer">Contact</div>
+            <div className="ml-5 cursor-pointer">📧 deqkim4@gmail.com</div>
           </li>
         </ul>
       </nav>

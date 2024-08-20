@@ -14,18 +14,18 @@ import {
 } from "react-icons/fa";
 
 export default function HeroSection() {
-  const techIconSize = 22;
+  const techIconSize = 24;
   return (
-    <div className="sm:text-center sm:py-32 md:text-left md:py-64 md:flex xl:pb-96">
+    <div className="sm:text-center sm:px-8 sm:py-32 md:px-64 md:text-left md:flex xl:pt-64">
       <div className="md:w-1/2">
-        <div className="font-bold tracking-widest mb-4 sm:text-3xl lg:text-4xl xl:text-5xl">
-          Front End Developer
+        <div className="font-bold tracking-widest mb-6 sm:text-3xl lg:text-4xl xl:text-5xl">
+          Full Stack Web Developer
         </div>
-        <div className=" text-neutral-500 tracking-widest mb-4">
+        <div className=" text-neutral-500 tracking-widest mb-6">
           Hi, I&apos;m Kim Ariel Dequilla. A passionate Front-end Developer
           based in General Santos City, Philippines 📍
         </div>
-        <div className="flex mt-3 sm:justify-center md:justify-start">
+        <div className="flex sm:justify-center md:justify-start mb-16">
           <a
             className="mr-1"
             href="https://www.linkedin.com/in/kadequilla"
@@ -38,11 +38,11 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <div className="md:flex mt-16 w-full mb-8">
-          <div className="font-bold md:w-1/4 text-sm sm:w-full sm:mb-3">
+        <div className="md:flex w-full mb-6">
+          <div className="font-bold md:hidden text-sm sm:w-full sm:mb-3">
             Tech Stacks
           </div>
-          <div className="flex justify-evenly w-full">
+          <div className="flex md:justify-between sm:justify-evenly w-full">
             <a href="">
               <DiJavascript size={techIconSize} />
             </a>
@@ -64,6 +64,14 @@ export default function HeroSection() {
             <a href="">
               <FaFigma size={techIconSize} />
             </a>
+          </div>
+        </div>
+
+        <div className="flex sm:justify-center md:justify-normal mb-5 text-yellow-600">
+          <div className="text-6xl font-bold mr-3">4+</div>
+          <div className="font-bold text-left">
+            YEARS <br />
+            EXPERIENCE
           </div>
         </div>
       </div>
