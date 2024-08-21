@@ -67,3 +67,45 @@
 .my-bg {
   background: #e6c1a7;
 }
+
+/* Define the keyframes for the animation */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(300px); /* Start position */
+    opacity: 0; /* Optional: start with element invisible */
+  }
+  100% {
+    transform: translateX(0); /* End position */
+    opacity: 1; /* Optional: end with element fully visible */
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to an element */
+.animate-right {
+  animation: slideInFromRight 1s ease-out; /* Adjust duration and easing as needed */
+}
+
+/* Apply the animation to an element */
+.animate-left-1s {
+  animation: slideInFromLeft 1s ease-out; /* Adjust duration and easing as needed */
+}
+
+.animate-left-1-5s {
+  animation: slideInFromLeft 1.5s ease-out; /* Adjust duration and easing as needed */
+}
+
+.animate-left-2s {
+  animation: slideInFromLeft 2s ease-out; /* Adjust duration and easing as needed */
+}

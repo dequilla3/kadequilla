@@ -1,11 +1,23 @@
+"use client";
+
 import { FaDesktop, FaMobile, FaWebAwesome } from "react-icons/fa6";
+import { useInView } from "react-intersection-observer";
 
 export default function AboutMe() {
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Trigger only once
+    threshold: 0.5,
+  });
+
   return (
     <div className="sm:py-16 md:py-32 md:px-64 bg-neutral-100 rounded-t-3xl">
       <div className="md:flex">
-        <div className="md:w-1/2 sm:px-8 sm:pb-8 md:pb-0 md:px-0">
-          <div className="shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5">
+        <div ref={ref} className="md:w-1/2 sm:px-8 sm:pb-8 md:pb-0 md:px-0">
+          <div
+            className={`shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5 ${
+              inView ? "animate-left-1s" : "opacity-0"
+            }`}
+          >
             <FaWebAwesome
               size={32}
               className="rounded-full bg-rose-500 p-2 text-white mr-3"
@@ -16,7 +28,11 @@ export default function AboutMe() {
             </div>
           </div>
 
-          <div className="shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5">
+          <div
+            className={`shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5 ${
+              inView ? "animate-left-1-5s" : "opacity-0"
+            }`}
+          >
             <FaMobile
               size={32}
               className="rounded-full bg-blue-600 p-2 text-white mr-3"
@@ -27,7 +43,11 @@ export default function AboutMe() {
             </div>
           </div>
 
-          <div className="shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5">
+          <div
+            className={`shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5 ${
+              inView ? "animate-left-2s" : "opacity-0"
+            }`}
+          >
             <FaDesktop
               size={32}
               className="rounded-full bg-yellow-600 p-2 text-white mr-3"
@@ -52,7 +72,11 @@ export default function AboutMe() {
             solutions.
           </div>
 
-          <div className="flex sm:justify-center md:justify-normal">
+          <div
+            className={`flex sm:justify-center md:justify-normal ${
+              inView ? "animate-right" : "opacity-0"
+            }`}
+          >
             <div className="text-center mr-8 rounded-xl border p-4">
               <div className="text-3xl font-bold">7+</div>
               <div className="text-xs">Projects Completed</div>

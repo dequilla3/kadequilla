@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { BiLogoTypescript } from "react-icons/bi";
-import { DiJavascript } from "react-icons/di";
+import { DiDocker, DiJavascript, DiMysql, DiPostgresql } from "react-icons/di";
 import {
   FaCss3,
   FaFigma,
@@ -12,6 +12,9 @@ import {
   FaReact,
   FaVuejs,
 } from "react-icons/fa";
+import { FaJava, FaLinux } from "react-icons/fa6";
+import { GrMysql } from "react-icons/gr";
+import { SiSpringboot } from "react-icons/si";
 
 export default function HeroSection() {
   const techIconSize = 24;
@@ -44,27 +47,19 @@ export default function HeroSection() {
             Tech Stacks
           </div>
           <div className="flex md:justify-between sm:justify-evenly w-full">
-            <a href="">
-              <DiJavascript size={techIconSize} />
-            </a>
-            <a href="">
-              <FaHtml5 size={techIconSize} />
-            </a>
-            <a href="">
-              <FaCss3 size={techIconSize} />
-            </a>
-            <a href="">
-              <BiLogoTypescript size={techIconSize} />
-            </a>
-            <a href="">
-              <FaReact size={techIconSize} />
-            </a>
-            <a href="">
-              <FaVuejs size={techIconSize} />
-            </a>
-            <a href="">
-              <FaFigma size={techIconSize} />
-            </a>
+            <DiJavascript size={techIconSize} />
+            <FaHtml5 size={techIconSize} />
+            <FaCss3 size={techIconSize} />
+            <BiLogoTypescript size={techIconSize} />
+            <FaReact size={techIconSize} />
+            <FaVuejs size={techIconSize} />
+            <FaFigma size={techIconSize} />
+            <FaJava size={techIconSize} />
+            <SiSpringboot size={techIconSize} />
+            <GrMysql size={techIconSize} />
+            <DiPostgresql size={techIconSize} />
+            <DiDocker size={techIconSize} />
+            <FaLinux size={techIconSize} />
           </div>
         </div>
 
