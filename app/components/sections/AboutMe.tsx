@@ -5,17 +5,18 @@ import { useInView } from "react-intersection-observer";
 
 export default function AboutMe() {
   const { ref, inView } = useInView({
-    triggerOnce: false, // Trigger only once
+    triggerOnce: true, // Trigger only once
     threshold: 0.5,
   });
 
+
   return (
-    <div className="sm:py-16 md:py-32 md:px-64 bg-neutral-100 rounded-t-3xl">
+    <div className={`sm:py-16 md:py-32 md:px-64 bg-neutral-100 rounded-t-3xl transition-all duration-700 ${inView ? 'opacity-100' : 'opacity-0'}`}>
       <div className="md:flex">
         <div ref={ref} className="md:w-1/2 sm:px-8 sm:pb-8 md:pb-0 md:px-0">
           <div
             className={`shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5 ${
-              inView ? "animate-left-1s" : "opacity-0"
+              inView ? "animate-left1" : "opacity-0"
             }`}
           >
             <FaWebAwesome
@@ -30,7 +31,7 @@ export default function AboutMe() {
 
           <div
             className={`shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5 ${
-              inView ? "animate-left-1-5s" : "opacity-0"
+              inView ? "animate-left2" : "opacity-0"
             }`}
           >
             <FaMobile
@@ -45,7 +46,7 @@ export default function AboutMe() {
 
           <div
             className={`shadow flex md:w-80 py-6 px-4 bg-white rounded-lg mb-5 ${
-              inView ? "animate-left-2s" : "opacity-0"
+              inView ? "animate-left3" : "opacity-0"
             }`}
           >
             <FaDesktop
@@ -72,11 +73,7 @@ export default function AboutMe() {
             solutions.
           </div>
 
-          <div
-            className={`flex sm:justify-center md:justify-normal ${
-              inView ? "animate-right" : "opacity-0"
-            }`}
-          >
+          <div className="flex sm:justify-center md:justify-normal">
             <div className="text-center mr-8 rounded-xl border p-4">
               <div className="text-3xl font-bold">7+</div>
               <div className="text-xs">Projects Completed</div>
