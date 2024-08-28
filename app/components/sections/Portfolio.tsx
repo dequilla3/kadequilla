@@ -18,7 +18,7 @@ export default function Porfolio() {
         inView ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div className="text-5xl mb-5 text-center">My Porfolios</div>
+      <div className="sm:text-3xl md:text-5xl mb-5 text-center">My Porfolios</div>
       <div
         className={`md:pt-32 sm:text-center md:text-left ${
           inView ? "animate-left1" : "opacity-0"

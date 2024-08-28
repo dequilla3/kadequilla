@@ -60,7 +60,7 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="sm:w-full sm:text-center sm:px-8 md:px-0 md:text-left md:w-1/2">
-          <div className="text-5xl mb-5">What do I help?</div>
+          <div className="sm:text-3xl md:text-5xl mb-5">What do I help?</div>
           <div className="tracking-wider mb-8">
             I design web applications, both front-end and back-end, as well as
             mobile applications using Flutter and desktop applications with .NET

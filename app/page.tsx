@@ -1,4 +1,5 @@
 import AboutMe from "./components/sections/AboutMe";
+import ContactMe from "./components/sections/ContactMe";
 import HeroSection from "./components/sections/HeroSection";
 import Portfolio from "./components/sections/Portfolio";
 
@@ -8,6 +9,7 @@ export default function Hero() {
       <HeroSection />
       <AboutMe />
       <Portfolio />
+      <ContactMe />
     </main>
   );
 }
