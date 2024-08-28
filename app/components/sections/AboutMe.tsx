@@ -6,12 +6,12 @@ import { useInView } from "react-intersection-observer";
 export default function AboutMe() {
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger only once
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
 
   return (
-    <div className={`sm:py-16 md:py-32 md:px-64 bg-neutral-100 rounded-t-3xl transition-all duration-700 ${inView ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`sm:py-16 md:py-64 md:px-64 bg-neutral-100 rounded-t-3xl transition-all duration-700 ${inView ? 'opacity-100' : 'opacity-0'}`}>
       <div className="md:flex">
         <div ref={ref} className="md:w-1/2 sm:px-8 sm:pb-8 md:pb-0 md:px-0">
           <div

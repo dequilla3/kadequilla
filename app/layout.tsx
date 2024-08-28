@@ -20,6 +20,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Navbar />
         {children}
+        <div className="text-center text-xs p-5 border">Copyright © 2024 kadequilla-portfolio</div>
       </body>
     </html>
   );

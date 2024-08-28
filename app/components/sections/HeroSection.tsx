@@ -19,7 +19,7 @@ import { SiSpringboot } from "react-icons/si";
 export default function HeroSection() {
   const techIconSize = 24;
   return (
-    <div className="sm:text-center sm:px-8 sm:py-32 lg:py-64 md:px-64 md:text-left md:flex">
+    <div className="sm:text-center sm:px-8 sm:py-32 lg:py-64 md:px-64 md:text-left md:flex xl:py-80">
       <div className="md:w-1/2">
         <div className="font-bold tracking-widest mb-6 sm:text-3xl lg:text-4xl xl:text-5xl">
           Full-stack Software Developer
