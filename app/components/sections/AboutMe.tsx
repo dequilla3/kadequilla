@@ -9,9 +9,12 @@ export default function AboutMe() {
     threshold: 0.2,
   });
 
-
   return (
-    <div className={`sm:py-16 md:py-64 md:px-64 bg-neutral-100 rounded-t-3xl transition-all duration-700 ${inView ? 'opacity-100' : 'opacity-0'}`}>
+    <div
+      className={`sm:py-16 md:py-64 md:px-64 bg-neutral-100 rounded-t-3xl transition-all duration-700 ${
+        inView ? "opacity-100" : "opacity-0"
+      }`}
+    >
       <div className="md:flex">
         <div ref={ref} className="md:w-1/2 sm:px-8 sm:pb-8 md:pb-0 md:px-0">
           <div
@@ -75,13 +78,8 @@ export default function AboutMe() {
 
           <div className="flex sm:justify-center md:justify-normal">
             <div className="text-center mr-8 rounded-xl border p-4">
-              <div className="text-3xl font-bold">7+</div>
+              <div className="text-3xl font-bold">7</div>
               <div className="text-xs">Projects Completed</div>
-            </div>
-
-            <div className="text-center rounded-xl border p-5">
-              <div className="text-3xl font-bold">4</div>
-              <div className="text-xs">Happy Clients</div>
             </div>
           </div>
         </div>
